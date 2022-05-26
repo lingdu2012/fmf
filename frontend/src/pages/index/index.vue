@@ -18,7 +18,9 @@
             <div style="float:right;" class="progress-bar">
                 <div style="background-color:rgba(66,147,33,1);height:0.5rem;"></div>
             </div>
-            <nut-icon name="fabulous" class="progress-icon-left"></nut-icon>
+            <div class="progress-icon-left">
+            <nut-icon name="fabulous" color="#fff"></nut-icon>
+            </div>
           </nut-col>
           <nut-col :span="4">
             <span class="word-vs">VS</span>
@@ -27,7 +29,9 @@
              <div style="float:left;" class="progress-bar">
                 <div style="background-color:#fa6419;height:0.5rem;"></div>
              </div>
-            <nut-icon name="footprint" class="progress-icon-right"></nut-icon>
+             <div class="progress-icon-right">
+            <nut-icon name="footprint" color="#fff"></nut-icon>
+             </div>
           </nut-col>
         </nut-row>
       </view>
@@ -137,10 +141,20 @@ export default {
   padding:0.8rem 0.1rem;
 }
 .progress-icon-left{
-float:right;margin-top:-0.2rem;
+float:right;
+background-color:rgba(66,147,33,1);
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: -0.4rem;
+border-radius:50%;
 }
 .progress-icon-right{
-float:left;margin-top:-0.2rem;
+float:left;
+background-color:#fa6419;
+ width: 1.4rem;
+  height: 1.4rem;
+  margin-top: -0.4rem;
+border-radius:50%;
 }
 .progress-bar{
 height:0.5rem;width:70%;
