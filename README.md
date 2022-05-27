@@ -36,3 +36,10 @@ Flow My Flag--a Taro3 demo, it is a complete project (frontEnd,backEnd,dataBase 
 4. support or oppose a flag from other's sharing flag (sum the click event and prevent sb from repeating click)
 5. display the flag's status (going, success, fail)
 6. change the flag's status (success, fail)
+
+## Notice
+
+1. change or set database 
+   * delete migrations folder
+   * npx prisma generate 
+   * npx prisma migrate dev --name init
